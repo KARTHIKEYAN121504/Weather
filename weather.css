@@ -9,6 +9,7 @@ body {
   align-items: center;
   height: 100vh;
 }
+
 .container {
   background-color: rgb(152, 208, 228);
   text-align: center;
@@ -17,12 +18,16 @@ body {
   box-shadow: 1px 1px 5px black;
   padding: 20px;
   width: 425px;
+  box-sizing: border-box;
 }
 
 .search {
   display: flex;
   justify-content: center;
+  gap: 0; 
   margin-bottom: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .search i {
@@ -87,24 +92,36 @@ body {
   line-height: 1.6;
 }
 
-/*.weekdays {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.weekdays div {
-  padding: 8px 12px;
-  background-color: #e0f7fa;
-  border-radius: 8px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
-}*/
 .detail {
   display: flex;
+  flex-wrap: wrap; 
   justify-content: space-between;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin: 10px 15px;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+    display: block;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    box-sizing: border-box;
+  }
+
+  .search {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .detail {
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px;
+  }
 }
