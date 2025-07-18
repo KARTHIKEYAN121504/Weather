@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Prediction</title>
+    <link rel="stylesheet" href="weather.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="icon" href="icon.png" />
+    <script src="weather.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Prediction</h1>
+      <div class="search">
+        <i class="fas fa-search"></i>
+        <input
+          type="search"
+          id="cityInput"
+          placeholder="Enter city name"
+          spellcheck="True"
+        />
+        <button type="submit" value="search" onclick="checkWeather();">Search</button>
+      </div>
+      <div class="error">
+        <p id="errorMessage"></p>
+        </div>
+        <div class="Main">
+      <div class="img">
+      <img
+        src="images/rain.png"
+        width="200px"
+        height="200px"
+        alt="Rain image"
+        class="weather-icon"
+      />
+    <p class="Name"></p></div>
+      <div class="detail">
+        <div class="weather">
+          <h1 class="temp">22°C</h1>
+          <h2 class="city" id="city">Chengalpattu</h2>
+          <p class="current-day">Sunday</p>
+        </div>
+
+        <div class="details">
+          <p class="humidity">Humidity: 50%</p>
+          <p class="wind">Wind Speed: 15 km/h</p>
+        </div>
+      </div>
+
+      <!-- <div class="weekdays">
+        <div><h4>Mon</h4>
+          <img src="days/icon.png"alt="icon">
+        </div>
+        <div><h4>Tue</h4>
+          <img src="days/icon.png"alt="icon">
+        </div>
+         <div><h4>Wed</h4>
+          <img src="days/icon.png"alt="icon">
+        </div></1>
+       <div><h4>Thu</h4>
+          <img src="days/icon.png"alt="icon">
+        </div>
+        <div><h4>Fri</h4>
+          <img src="days/icon.png"alt="icon">
+        </div>
+        <div><h4>Sat</h4>
+          <img src="days/icon.png"alt="icon">
+        </div>
+        <div><h4>Sun</h4>
+          <img src="days/icon.png"alt="icon">
+        </div>
+      </div>-->
+      </div>
+    </div>  </body>
+</html>
